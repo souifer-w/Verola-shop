@@ -113,7 +113,9 @@ a {
 .nav-action {
   padding: 10px 18px;
   border: 1px solid currentColor;
-  transition: background 260ms ease, color 260ms ease;
+  transition:
+    background 260ms ease,
+    color 260ms ease;
 }
 
 .nav-action:hover {
@@ -134,7 +136,10 @@ a {
   width: 46px;
   height: 46px;
   border: 1px solid currentColor;
-  transition: transform 260ms ease, background 260ms ease, color 260ms ease;
+  transition:
+    transform 260ms ease,
+    background 260ms ease,
+    color 260ms ease;
 }
 
 .cart-link:hover {
@@ -211,7 +216,8 @@ a {
   color: var(--white);
   background:
     linear-gradient(90deg, rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.08) 68%),
-    url("https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=2200&q=85") center / cover;
+    url("https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=2200&q=85")
+      center / cover;
   animation: heroDrift 18s ease-in-out infinite alternate;
 }
 
@@ -290,7 +296,11 @@ h3 {
   letter-spacing: 0.14em;
   text-transform: uppercase;
   cursor: pointer;
-  transition: transform 260ms ease, background 260ms ease, color 260ms ease, box-shadow 260ms ease;
+  transition:
+    transform 260ms ease,
+    background 260ms ease,
+    color 260ms ease,
+    box-shadow 260ms ease;
 }
 
 .button:hover {
@@ -377,7 +387,9 @@ h3 {
 .collection-card img,
 .product-media img,
 .shop-media img {
-  transition: transform 600ms ease, filter 600ms ease;
+  transition:
+    transform 600ms ease,
+    filter 600ms ease;
 }
 
 .collection-card:hover img,
@@ -414,7 +426,9 @@ h3 {
 .product-card,
 .shop-card {
   background: var(--white);
-  transition: transform 300ms ease, box-shadow 300ms ease;
+  transition:
+    transform 300ms ease,
+    box-shadow 300ms ease;
   animation: riseIn 760ms ease both;
 }
 
@@ -512,7 +526,8 @@ h3 {
   text-align: center;
   background:
     linear-gradient(rgba(0, 0, 0, 0.34), rgba(0, 0, 0, 0.34)),
-    url("https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=2200&q=85") center / cover fixed;
+    url("https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=2200&q=85")
+      center / cover fixed;
   animation: bannerGlow 12s ease-in-out infinite alternate;
 }
 
@@ -547,7 +562,8 @@ h3 {
   padding: clamp(72px, 9vw, 128px) clamp(20px, 5vw, 72px);
   background:
     linear-gradient(rgba(244, 239, 231, 0.78), rgba(244, 239, 231, 0.78)),
-    url("https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1800&q=85") center / cover;
+    url("https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1800&q=85")
+      center / cover;
 }
 
 .newsletter-panel {
@@ -685,7 +701,10 @@ address {
   font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  transition: background 260ms ease, color 260ms ease, transform 260ms ease;
+  transition:
+    background 260ms ease,
+    color 260ms ease,
+    transform 260ms ease;
 }
 
 .filter-bar a:hover {
@@ -994,10 +1013,6 @@ address {
 }
 
 @media (max-width: 1000px) {
-  .nav-links {
-    display: none;
-  }
-
   .collection-grid,
   .product-grid,
   .shop-grid {
@@ -1017,6 +1032,14 @@ address {
 }
 
 @media (max-width: 680px) {
+  .nav-links {
+    position: absolute;
+    top: 110%;
+    padding: 0.4rem;
+    box-shadow: 5px 5px 5px rgba(29, 28, 28, 0.212);
+    border-radius: 4px;
+    width: 97%;
+  }
   .site-header {
     padding: 14px;
   }

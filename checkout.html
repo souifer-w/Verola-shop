@@ -1,76 +1,113 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Checkout | Verola</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header class="site-header page-header">
-    <nav class="navbar dark-nav" aria-label="Primary navigation">
-      <a class="brand" href="index.html">Verola</a>
-      <div class="nav-links">
-        <a href="products.html">Collections</a>
-        <a href="products.html#featured-products">New In</a>
-        <a href="payment.html">Payment</a>
-        <a href="order-summary.html">Summary</a>
-      </div>
-      <a class="cart-link" href="checkout.html" aria-label="Shopping bag with two products">
-        <span class="cart-icon" aria-hidden="true"></span>
-        <span class="cart-count">2</span>
-      </a>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout | Verola</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header page-header">
+      <nav class="navbar dark-nav" aria-label="Primary navigation">
+        <a class="brand" href="index.html">Verola</a>
+        <div class="nav-links">
+          <a href="products.html">Collections</a>
+          <a href="products.html#featured-products">New In</a>
+          <a href="payment.html">Payment</a>
+          <a href="order-summary.html">Summary</a>
+        </div>
+        <a
+          class="cart-link"
+          href="checkout.html"
+          aria-label="Shopping bag with two products"
+        >
+          <span class="cart-icon" aria-hidden="true"></span>
+          <span class="cart-count">2</span>
+        </a>
+      </nav>
+    </header>
 
-  <main class="page-main">
-    <section class="checkout-layout">
-      <div class="checkout-panel">
-        <p class="eyebrow dark">Secure Checkout</p>
-        <h1>Delivery Details</h1>
-        <form class="checkout-form" action="payment.html" method="get">
-          <div class="form-grid">
-            <label>First Name<input type="text" name="first-name" placeholder="Amelia"></label>
-            <label>Last Name<input type="text" name="last-name" placeholder="Stone"></label>
-            <label>Email<input type="email" name="email" placeholder="amelia@email.com"></label>
-            <label>Phone<input type="tel" name="phone" placeholder="+1 212 555 0198"></label>
-            <label class="full">Address<input type="text" name="address" placeholder="28 Madison Avenue"></label>
-            <label>City<input type="text" name="city" placeholder="New York"></label>
-            <label>Postal Code<input type="text" name="postal-code" placeholder="10010"></label>
-          </div>
-          <button class="button button-dark form-button" type="submit">Continue to Payment</button>
-        </form>
-      </div>
+    <main class="page-main">
+      <section class="checkout-layout">
+        <div class="checkout-panel">
+          <p class="eyebrow dark">Secure Checkout</p>
+          <h1>Delivery Details</h1>
+          <form class="checkout-form" action="payment.html" method="get">
+            <div class="form-grid">
+              <label
+                >First Name<input
+                  type="text"
+                  name="first-name"
+                  placeholder="Amelia"
+              /></label>
+              <label
+                >Last Name<input
+                  type="text"
+                  name="last-name"
+                  placeholder="Stone"
+              /></label>
+              <label
+                >Email<input
+                  type="email"
+                  name="email"
+                  placeholder="amelia@email.com"
+              /></label>
+              <label
+                >Phone<input
+                  type="tel"
+                  name="phone"
+                  placeholder="+1 212 555 0198"
+              /></label>
+              <label class="full"
+                >Address<input
+                  type="text"
+                  name="address"
+                  placeholder="28 Madison Avenue"
+              /></label>
+              <label
+                >City<input type="text" name="city" placeholder="New York"
+              /></label>
+              <label
+                >Postal Code<input
+                  type="text"
+                  name="postal-code"
+                  placeholder="10010"
+              /></label>
+            </div>
+            <button class="button button-dark form-button" type="submit">
+              Continue to Payment
+            </button>
+          </form>
+        </div>
 
-      <aside class="summary-card" aria-label="Order summary">
-        <p class="eyebrow dark">Your Bag</p>
-        <div class="summary-item">
-          <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=300&q=85" alt="Heritage silver watch">
-          <div>
-            <h2>Heritage Silver Watch</h2>
-            <p>Qty 1</p>
+        <aside class="summary-card" aria-label="Order summary">
+          <p class="eyebrow dark">Your Bag</p>
+          <div class="summary-item">
+            <img
+              src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=300&q=85"
+              alt="Heritage silver watch"
+            />
+            <div>
+              <h2>Heritage Silver Watch</h2>
+              <p>Qty 1</p>
+            </div>
+            <strong>$420</strong>
           </div>
-          <strong>$420</strong>
-        </div>
-        <div class="summary-item">
-          <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=300&q=85" alt="Noir perfume bottle">
-          <div>
-            <h2>Noir Eau de Parfum</h2>
-            <p>Qty 1</p>
+
+          <div class="summary-lines">
+            <p><span>Subtotal</span><strong>$605</strong></p>
+            <p><span>Express Delivery</span><strong>$18</strong></p>
+            <p><span>Estimated Tax</span><strong>$48</strong></p>
+            <p class="total"><span>Total</span><strong>$671</strong></p>
           </div>
-          <strong>$185</strong>
-        </div>
-        <div class="summary-lines">
-          <p><span>Subtotal</span><strong>$605</strong></p>
-          <p><span>Express Delivery</span><strong>$18</strong></p>
-          <p><span>Estimated Tax</span><strong>$48</strong></p>
-          <p class="total"><span>Total</span><strong>$671</strong></p>
-        </div>
-      </aside>
-    </section>
-  </main>
-</body>
+        </aside>
+      </section>
+    </main>
+  </body>
 </html>

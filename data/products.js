@@ -1,5 +1,6 @@
 export const products = [
   {
+    productId: "PRD-1001",
     topic: "Watches",
     name: "Heritage Silver Watch",
     image:
@@ -7,6 +8,7 @@ export const products = [
     price: 460,
   },
   {
+    productId: "PRD-1002",
     topic: "Watches",
     name: "Atelier Leather Watch",
     image:
@@ -14,6 +16,7 @@ export const products = [
     price: 390,
   },
   {
+    productId: "PRD-1003",
     topic: "Perfumes",
     name: "Noir Eau de Parfum",
     image:
@@ -21,6 +24,7 @@ export const products = [
     price: 185,
   },
   {
+    productId: "PRD-1004",
     topic: "Perfumes",
     name: "Santal Reserve",
     image:
@@ -28,6 +32,7 @@ export const products = [
     price: 210,
   },
   {
+    productId: "PRD-1005",
     topic: "Sneakers",
     name: "Cream Leather Sneakers",
     image:
@@ -35,6 +40,7 @@ export const products = [
     price: 260,
   },
   {
+    productId: "PRD-1006",
     topic: "Sneakers",
     name: "Soft Court Low",
     image:
@@ -42,6 +48,7 @@ export const products = [
     price: 245,
   },
   {
+    productId: "PRD-1007",
     topic: "Leather Bags",
     name: "Structured Leather Tote",
     image:
@@ -49,6 +56,7 @@ export const products = [
     price: 540,
   },
   {
+    productId: "PRD-1008",
     topic: "Accessories",
     name: "Gold Line Bracelet",
     image:
