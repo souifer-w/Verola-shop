@@ -1,61 +1,93 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Payment | Verola</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header class="site-header page-header">
-    <nav class="navbar dark-nav" aria-label="Primary navigation">
-      <a class="brand" href="index.html">Verola</a>
-      <div class="nav-links">
-        <a href="products.html">Collections</a>
-        <a href="checkout.html">Checkout</a>
-        <a href="order-summary.html">Summary</a>
-      </div>
-      <a class="cart-link" href="checkout.html" aria-label="Shopping bag with two products">
-        <span class="cart-icon" aria-hidden="true"></span>
-        <span class="cart-count">2</span>
-      </a>
-    </nav>
-  </header>
-
-  <main class="page-main">
-    <section class="checkout-layout payment-page">
-      <div class="checkout-panel">
-        <p class="eyebrow dark">Encrypted Payment</p>
-        <h1>Payment Method</h1>
-        <form class="checkout-form" action="order-summary.html" method="get">
-          <label class="radio-card">
-            <input type="radio" name="payment" checked>
-            <span>Credit or Debit Card</span>
-          </label>
-          <div class="form-grid">
-            <label class="full">Cardholder Name<input type="text" name="card-name" placeholder="Amelia Stone"></label>
-            <label class="full">Card Number<input type="text" name="card-number" placeholder="4242 4242 4242 4242"></label>
-            <label>Expiry Date<input type="text" name="expiry" placeholder="08 / 29"></label>
-            <label>Security Code<input type="text" name="security-code" placeholder="123"></label>
-          </div>
-          <button class="button button-dark form-button" type="submit">Review Order</button>
-        </form>
-      </div>
-
-      <aside class="summary-card payment-card" aria-label="Payment total">
-        <p class="eyebrow dark">Total Due</p>
-        <h2>$671</h2>
-        <p>Your order includes two pieces, express delivery, and estimated tax. Payment details are represented as a static portfolio UI.</p>
-        <div class="summary-lines">
-          <p><span>Items</span><strong>$605</strong></p>
-          <p><span>Delivery</span><strong>$18</strong></p>
-          <p><span>Tax</span><strong>$48</strong></p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment | Verola</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header page-header">
+      <nav class="navbar dark-nav" aria-label="Primary navigation">
+        <a class="brand" href="index.html">Verola</a>
+        <div class="nav-links">
+          <a href="products.html">Collections</a>
+          <a href="checkout.html">Checkout</a>
+          <a href="order-summary.html">Summary</a>
         </div>
-      </aside>
-    </section>
-  </main>
-</body>
+        <a
+          class="cart-link"
+          href="checkout.html"
+          aria-label="Shopping bag with two products"
+        >
+          <span class="cart-icon" aria-hidden="true"></span>
+          <span class="cart-count">0</span>
+        </a>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <section class="checkout-layout payment-page">
+        <div class="checkout-panel">
+          <p class="eyebrow dark">Encrypted Payment</p>
+          <h1>Payment Method</h1>
+          <form class="checkout-form" action="order-summary.html" method="get">
+            <label class="radio-card">
+              <input type="radio" name="payment" checked />
+              <span>Credit or Debit Card</span>
+            </label>
+            <div class="form-grid">
+              <label class="full"
+                >Cardholder Name<input
+                  type="text"
+                  name="card-name"
+                  placeholder="Amelia Stone"
+              /></label>
+              <label class="full"
+                >Card Number<input
+                  type="text"
+                  name="card-number"
+                  placeholder="4242 4242 4242 4242"
+              /></label>
+              <label
+                >Expiry Date<input
+                  type="text"
+                  name="expiry"
+                  placeholder="08 / 29"
+              /></label>
+              <label
+                >Security Code<input
+                  type="text"
+                  name="security-code"
+                  placeholder="123"
+              /></label>
+            </div>
+            <button class="button button-dark form-button" type="submit">
+              Review Order
+            </button>
+          </form>
+        </div>
+
+        <aside class="summary-card payment-card" aria-label="Payment total">
+          <p class="eyebrow dark">Total Due</p>
+          <h2>$671</h2>
+          <p>
+            Your order includes two pieces, express delivery, and estimated tax.
+            Payment details are represented as a static portfolio UI.
+          </p>
+          <div class="summary-lines">
+            <p><span>Items</span><strong>$605</strong></p>
+            <p><span>Delivery</span><strong>$18</strong></p>
+            <p><span>Tax</span><strong>$48</strong></p>
+          </div>
+        </aside>
+      </section>
+    </main>
+  </body>
 </html>

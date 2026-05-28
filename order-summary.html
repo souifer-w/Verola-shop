@@ -1,71 +1,89 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Order Summary | Verola</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header class="site-header page-header">
-    <nav class="navbar dark-nav" aria-label="Primary navigation">
-      <a class="brand" href="index.html">Verola</a>
-      <div class="nav-links">
-        <a href="products.html">Collections</a>
-        <a href="checkout.html">Checkout</a>
-        <a href="payment.html">Payment</a>
-      </div>
-      <a class="cart-link" href="checkout.html" aria-label="Shopping bag with two products">
-        <span class="cart-icon" aria-hidden="true"></span>
-        <span class="cart-count">2</span>
-      </a>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Summary | Verola</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header page-header">
+      <nav class="navbar dark-nav" aria-label="Primary navigation">
+        <a class="brand" href="index.html">Verola</a>
+        <div class="nav-links">
+          <a href="products.html">Collections</a>
+          <a href="checkout.html">Checkout</a>
+          <a href="payment.html">Payment</a>
+        </div>
+        <a
+          class="cart-link"
+          href="checkout.html"
+          aria-label="Shopping bag with two products"
+        >
+          <span class="cart-icon" aria-hidden="true"></span>
+          <span class="cart-count">0</span>
+        </a>
+      </nav>
+    </header>
 
-  <main class="page-main">
-    <section class="summary-page">
-      <div class="order-confirmation">
-        <p class="eyebrow dark">Order Summary</p>
-        <h1>Review Your Verola Order</h1>
-        <p class="summary-note">A polished static summary screen for the final checkout step, ready for a portfolio presentation.</p>
-      </div>
-
-      <div class="order-grid">
-        <div class="checkout-panel">
-          <h2>Items</h2>
-          <div class="summary-item large-item">
-            <img src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=300&q=85" alt="Heritage silver watch">
-            <div>
-              <h3>Heritage Silver Watch</h3>
-              <p>Watches · Qty 1</p>
-            </div>
-            <strong>$420</strong>
-          </div>
-          <div class="summary-item large-item">
-            <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=300&q=85" alt="Noir perfume bottle">
-            <div>
-              <h3>Noir Eau de Parfum</h3>
-              <p>Perfumes · Qty 1</p>
-            </div>
-            <strong>$185</strong>
-          </div>
+    <main class="page-main">
+      <section class="summary-page">
+        <div class="order-confirmation">
+          <p class="eyebrow dark">Order Summary</p>
+          <h1>Review Your Verola Order</h1>
+          <p class="summary-note">
+            A polished static summary screen for the final checkout step, ready
+            for a portfolio presentation.
+          </p>
         </div>
 
-        <aside class="summary-card">
-          <p class="eyebrow dark">Final Total</p>
-          <div class="summary-lines">
-            <p><span>Subtotal</span><strong>$605</strong></p>
-            <p><span>Express Delivery</span><strong>$18</strong></p>
-            <p><span>Estimated Tax</span><strong>$48</strong></p>
-            <p class="total"><span>Total</span><strong>$671</strong></p>
+        <div class="order-grid">
+          <div class="checkout-panel">
+            <h2>Items</h2>
+            <div class="summary-item large-item">
+              <img
+                src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=300&q=85"
+                alt="Heritage silver watch"
+              />
+              <div>
+                <h3>Heritage Silver Watch</h3>
+                <p>Watches · Qty 1</p>
+              </div>
+              <strong>$420</strong>
+            </div>
+            <div class="summary-item large-item">
+              <img
+                src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=300&q=85"
+                alt="Noir perfume bottle"
+              />
+              <div>
+                <h3>Noir Eau de Parfum</h3>
+                <p>Perfumes · Qty 1</p>
+              </div>
+              <strong>$185</strong>
+            </div>
           </div>
-          <a class="button button-dark full-button" href="index.html">Place Order</a>
-        </aside>
-      </div>
-    </section>
-  </main>
-</body>
+
+          <aside class="summary-card">
+            <p class="eyebrow dark">Final Total</p>
+            <div class="summary-lines">
+              <p><span>Subtotal</span><strong>$605</strong></p>
+              <p><span>Express Delivery</span><strong>$18</strong></p>
+              <p><span>Estimated Tax</span><strong>$48</strong></p>
+              <p class="total"><span>Total</span><strong>$671</strong></p>
+            </div>
+            <a class="button button-dark full-button" href="index.html"
+              >Place Order</a
+            >
+          </aside>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

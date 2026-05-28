@@ -28,7 +28,7 @@
           aria-label="Shopping bag with two products"
         >
           <span class="cart-icon" aria-hidden="true"></span>
-          <span class="cart-count">2</span>
+          <span class="cart-count">0</span>
         </a>
       </nav>
     </header>
@@ -86,28 +86,18 @@
           </form>
         </div>
 
-        <aside class="summary-card" aria-label="Order summary">
-          <p class="eyebrow dark">Your Bag</p>
-          <div class="summary-item">
-            <img
-              src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=300&q=85"
-              alt="Heritage silver watch"
-            />
-            <div>
-              <h2>Heritage Silver Watch</h2>
-              <p>Qty 1</p>
-            </div>
-            <strong>$420</strong>
-          </div>
-
-          <div class="summary-lines">
-            <p><span>Subtotal</span><strong>$605</strong></p>
-            <p><span>Express Delivery</span><strong>$18</strong></p>
-            <p><span>Estimated Tax</span><strong>$48</strong></p>
-            <p class="total"><span>Total</span><strong>$671</strong></p>
-          </div>
-        </aside>
+        <aside
+          class="summary-card js-summary-card"
+          aria-label="Order summary"
+        ></aside>
+        <div class="summary-lines">
+          <p><span>Subtotal</span><strong>$605</strong></p>
+          <p><span>Express Delivery</span><strong>$18</strong></p>
+          <p><span>Estimated Tax</span><strong>$48</strong></p>
+          <p class="total"><span>Total</span><strong>$671</strong></p>
+        </div>
       </section>
     </main>
+    <script src="script/checkout.js" type="module"></script>
   </body>
 </html>
