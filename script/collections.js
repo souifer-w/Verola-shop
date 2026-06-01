@@ -12,6 +12,7 @@ function collectionsGrid() {
             <span>${product.topic}</span>
             <h2>${product.name}</h2>
             <p>$${product.price}</p>
+            <a class="button button-light" href="product-landing.html#${product.productId}">View Landing</a>
             <a class="button button-dark cart-button js-cart-button"  
             data-product-id="${product.productId}" ><span class="cart-icon mini" aria-hidden="true"></span>Add to Bag</a>
           </div>
