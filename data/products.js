@@ -13,6 +13,11 @@ export const products = [
       "https://images.unsplash.com/photo-1434056886845-dac89ffe9b56?auto=format&fit=crop&w=800&q=85",
       "https://images.unsplash.com/photo-1539874754764-5a96559165b0?auto=format&fit=crop&w=800&q=85",
     ],
+    features: [
+      "Silver-tone stainless steel bracelet",
+      "Minimal dial with slim hour markers",
+      "Elegant weight and polished finish",
+    ],
   },
 
   {
@@ -28,6 +33,11 @@ export const products = [
       "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?auto=format&fit=crop&w=1200&q=85",
       "https://images.unsplash.com/photo-1542496658-e33a6d0d50f6?auto=format&fit=crop&w=800&q=85",
       "https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?auto=format&fit=crop&w=800&q=85",
+    ],
+    features: [
+      "Genuine leather strap",
+      "Low-profile dress case",
+      "Warm metal tone with refined contrast",
     ],
   },
 
@@ -45,6 +55,11 @@ export const products = [
       "https://images.unsplash.com/photo-1590736704728-f4730bb30770?auto=format&fit=crop&w=800&q=85",
       "https://images.unsplash.com/photo-1587017539504-67cfbddac569?auto=format&fit=crop&w=800&q=85",
     ],
+    features: [
+      "Top notes of bergamot and black pepper",
+      "Cedar, iris, amber, and musk",
+      "Elegant bottle for a premium vanity",
+    ],
   },
 
   {
@@ -60,6 +75,11 @@ export const products = [
       "https://images.unsplash.com/photo-1595425970377-c9703cf48b6d?auto=format&fit=crop&w=1200&q=85",
       "https://images.unsplash.com/photo-1615634260167-c8cdede054de?auto=format&fit=crop&w=800&q=85",
       "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=800&q=85",
+    ],
+    features: [
+      "Sandalwood, clean musk, and soft suede",
+      "Long-lasting eau de parfum strength",
+      "Warm and polished daily character",
     ],
   },
 
@@ -77,6 +97,11 @@ export const products = [
       "https://images.unsplash.com/photo-1603808033192-082d6919d3e1?auto=format&fit=crop&w=800&q=85",
       "https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?auto=format&fit=crop&w=800&q=85",
     ],
+    features: [
+      "Smooth leather upper",
+      "Padded comfort collar",
+      "Seasonless cream finish",
+    ],
   },
 
   {
@@ -92,6 +117,11 @@ export const products = [
       "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1200&q=85",
       "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?auto=format&fit=crop&w=800&q=85",
       "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=800&q=85",
+    ],
+    features: [
+      "Low court silhouette",
+      "Durable rubber outsole",
+      "Refined profile with daily comfort",
     ],
   },
 
@@ -109,6 +139,11 @@ export const products = [
       "https://images.unsplash.com/photo-1594223274512-ad4803739b7c?auto=format&fit=crop&w=800&q=85",
       "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=85",
     ],
+    features: [
+      "Structured leather body",
+      "Interior pocket and generous capacity",
+      "Elegant top-handle construction",
+    ],
   },
 
   {
@@ -124,6 +159,11 @@ export const products = [
       "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1200&q=85",
       "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=800&q=85",
       "https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?auto=format&fit=crop&w=800&q=85",
+    ],
+    features: [
+      "Polished gold-tone finish",
+      "Adjustable clasp closure",
+      "Lightweight stackable design",
     ],
   },
 ];
