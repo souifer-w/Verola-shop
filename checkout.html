@@ -20,7 +20,6 @@
           <a href="products.html">Collections</a>
           <a href="products.html#featured-products">New In</a>
           <a href="payment.html">Payment</a>
-          <a href="order-summary.html">Summary</a>
         </div>
         <a
           class="cart-link"
@@ -28,7 +27,7 @@
           aria-label="Shopping bag with two products"
         >
           <span class="cart-icon" aria-hidden="true"></span>
-          <span class="cart-count">0</span>
+          <span class="cart-count"></span>
         </a>
       </nav>
     </header>
@@ -45,39 +44,42 @@
                   type="text"
                   name="first-name"
                   placeholder="Amelia"
+                  required
               /></label>
               <label
                 >Last Name<input
                   type="text"
                   name="last-name"
                   placeholder="Stone"
+                  required
               /></label>
               <label
                 >Email<input
                   type="email"
                   name="email"
                   placeholder="amelia@email.com"
+                  required
               /></label>
               <label
                 >Phone<input
                   type="tel"
                   name="phone"
                   placeholder="+1 212 555 0198"
+                  required
               /></label>
               <label class="full"
                 >Address<input
                   type="text"
                   name="address"
                   placeholder="28 Madison Avenue"
+                  required
               /></label>
               <label
-                >City<input type="text" name="city" placeholder="New York"
-              /></label>
-              <label
-                >Postal Code<input
+                >City<input
                   type="text"
-                  name="postal-code"
-                  placeholder="10010"
+                  name="city"
+                  placeholder="New York"
+                  required
               /></label>
             </div>
             <button class="button button-dark form-button" type="submit">
@@ -86,16 +88,9 @@
           </form>
         </div>
 
-        <aside
-          class="summary-card js-summary-card"
-          aria-label="Order summary"
-        ></aside>
-        <div class="summary-lines">
-          <p><span>Subtotal</span><strong>$605</strong></p>
-          <p><span>Express Delivery</span><strong>$18</strong></p>
-          <p><span>Estimated Tax</span><strong>$48</strong></p>
-          <p class="total"><span>Total</span><strong>$671</strong></p>
-        </div>
+        <aside class="summary-card js-summary-card" aria-label="Order summary">
+          <p class="eyebrow dark">Your Bag</p>
+        </aside>
       </section>
     </main>
     <script src="script/checkout.js" type="module"></script>

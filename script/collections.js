@@ -1,5 +1,5 @@
 import { products } from "../data/products.js";
-import { cart, saveToLocalStorage } from "../data/cart.js";
+import { cart, saveToLocalStorage, updateCartQuantity } from "../data/cart.js";
 function collectionsGrid() {
   let collectionsHtml = "";
   products.forEach((product) => {
@@ -23,7 +23,6 @@ function collectionsGrid() {
   document.querySelector(".js-shop-grid").innerHTML = collectionsHtml;
   function addtocart() {
     const addBtn = document.querySelectorAll(".js-cart-button");
-    let cartCount = 0;
     addBtn.forEach((btn) => {
       btn.addEventListener("click", () => {
         const productId = btn.dataset.productId;
@@ -37,7 +36,6 @@ function collectionsGrid() {
         if (matchingItem) {
           cart.forEach((cartItem) => {
             cartItem.quantity++;
-            document.querySelector(".cart-count").innerHTML = cartItem.quantity;
           });
         } else if (!matchingItem) {
           cart.push({
@@ -45,7 +43,8 @@ function collectionsGrid() {
             quantity: 1,
           });
         }
-        console.log("hi");
+
+        updateCartQuantity();
 
         saveToLocalStorage();
       });
@@ -54,3 +53,4 @@ function collectionsGrid() {
   addtocart();
 }
 collectionsGrid();
+updateCartQuantity();

@@ -671,7 +671,28 @@ address {
   min-height: 100vh;
   padding-top: 104px;
 }
-
+.page-pay {
+  filter: blur(5px);
+  pointer-events: none;
+  position: fixed;
+}
+.pay a {
+  background-color: #0d0d0c;
+  color: white;
+  padding: 0.8rem;
+  border-radius: 5px;
+}
+.pay p {
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.pay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .page-hero {
   max-width: 1120px;
   margin: 0 auto;
@@ -772,7 +793,9 @@ address {
   padding: 14px 0;
   border-bottom: 1px solid var(--line);
 }
-
+.delete-item {
+  margin-left: 90%;
+}
 .form-button,
 .full-button {
   width: 100%;
@@ -848,7 +871,7 @@ address {
 
 .order-confirmation {
   max-width: 900px;
-  margin-bottom: 36px;
+  margin: 3rem;
 }
 
 .large-item {
@@ -1131,4 +1154,14 @@ address {
   .summary-item strong {
     grid-column: 2;
   }
+}
+.pay {
+  position: absolute;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 4rem;
+  left: 30%;
+  top: 50%;
+  display: none;
 }

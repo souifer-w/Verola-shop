@@ -31,8 +31,15 @@
         </a>
       </nav>
     </header>
-
     <main class="page-main">
+      <div class="order-confirmation">
+        <p class="eyebrow dark">Order Summary</p>
+        <h1>Review Your Verola Order</h1>
+        <p class="summary-note">
+          A polished static summary screen for the final checkout step, ready
+          for a portfolio presentation.
+        </p>
+      </div>
       <section class="checkout-layout payment-page">
         <div class="checkout-panel">
           <p class="eyebrow dark">Encrypted Payment</p>
@@ -48,46 +55,57 @@
                   type="text"
                   name="card-name"
                   placeholder="Amelia Stone"
+                  required
               /></label>
               <label class="full"
                 >Card Number<input
                   type="text"
                   name="card-number"
                   placeholder="4242 4242 4242 4242"
+                  required
               /></label>
               <label
                 >Expiry Date<input
                   type="text"
                   name="expiry"
                   placeholder="08 / 29"
+                  required
               /></label>
               <label
                 >Security Code<input
                   type="text"
                   name="security-code"
                   placeholder="123"
+                  required
               /></label>
             </div>
             <button class="button button-dark form-button" type="submit">
-              Review Order
+              Pay
             </button>
           </form>
         </div>
-
-        <aside class="summary-card payment-card" aria-label="Payment total">
-          <p class="eyebrow dark">Total Due</p>
-          <h2>$671</h2>
-          <p>
-            Your order includes two pieces, express delivery, and estimated tax.
-            Payment details are represented as a static portfolio UI.
-          </p>
+        <aside class="summary-card">
+          <p class="eyebrow dark">Final Total</p>
           <div class="summary-lines">
-            <p><span>Items</span><strong>$605</strong></p>
-            <p><span>Delivery</span><strong>$18</strong></p>
-            <p><span>Tax</span><strong>$48</strong></p>
+            <p><span>Subtotal</span><strong>$605</strong></p>
+            <p><span>Express Delivery</span><strong>$18</strong></p>
+            <p><span>Estimated Tax</span><strong>$48</strong></p>
+            <p class="total"><span>Total</span><strong>$671</strong></p>
           </div>
         </aside>
       </section>
+      <section class="summary-page">
+        <div class="order-grid">
+          <div class="checkout-panel js-checkout-panel">
+            <h2>Items</h2>
+          </div>
+        </div>
+      </section>
     </main>
+    <div class="pay">
+      <p>payment sucssefully ✓</p>
+      <a href="products.html">Back to collectionspay</a>
+    </div>
+    <script src="script/payment.js" type="module"></script>
   </body>
 </html>
