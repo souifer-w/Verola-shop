@@ -4,6 +4,26 @@ export let cart = JSON.parse(localStorage.getItem("cart")) || [
     quantity: 2,
   },
 ];
+export function addtocart(productId) {
+  let matchingItem;
+
+  cart.forEach((cartItem) => {
+    if (cartItem.productId === productId) {
+      matchingItem = cartItem;
+    }
+  });
+  if (matchingItem) {
+    matchingItem.quantity += 1;
+  } else if (!matchingItem) {
+    cart.push({
+      productId: productId,
+      quantity: 1,
+    });
+  }
+
+  updateCartQuantity();
+  saveToLocalStorage();
+}
 export function saveToLocalStorage() {
   localStorage.setItem("cart", JSON.stringify(cart));
 }
