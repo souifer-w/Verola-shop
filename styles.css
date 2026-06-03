@@ -841,7 +841,7 @@ address {
 .checkout-panel h1,
 .order-confirmation h1 {
   color: var(--black);
-  font-size: clamp(3.2rem, 8vw, 7rem);
+  font-size: clamp(3.2rem, 8vw, 6rem);
 }
 
 .filter-bar {
@@ -942,13 +942,30 @@ address {
 
 .summary-item {
   display: grid;
-  grid-template-columns: 74px 1fr auto;
+  grid-template-columns: 100px 1fr auto;
   gap: 16px;
   align-items: center;
   padding: 18px 0;
   border-bottom: 1px solid var(--line);
 }
-
+.summary-cartQuantity {
+  display: flex;
+  gap: 1rem;
+  justify-content: start;
+  align-items: center;
+}
+.summary-cartQuantity div {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.summary-cartQuantity span {
+  background-color: #0d0d0c;
+  color: white;
+  padding: 0rem 0.4rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
 .summary-item img {
   aspect-ratio: 1;
 }
@@ -1120,7 +1137,6 @@ address {
   .section-heading,
   .about-inner,
   .newsletter-panel,
-  .checkout-panel,
   .summary-card,
   .order-confirmation,
   .filter-bar,
@@ -1276,7 +1292,7 @@ address {
   .newsletter-panel,
   .checkout-panel,
   .summary-card {
-    padding: 26px 20px;
+    padding: 46px 20px;
   }
 
   .form-row {

@@ -47,3 +47,28 @@ export function removeCartItem(productId) {
   saveToLocalStorage();
   console.log(newCart);
 }
+export function minusQuantity(productId) {
+  cart.forEach((item) => {
+    if (item.quantity < 1) {
+      return;
+    }
+    if (item.productId === productId) {
+      item.quantity -= 1;
+    }
+  });
+  updateCartQuantity();
+  saveToLocalStorage();
+}
+export function plusQuantity(productId) {
+  cart.forEach((item) => {
+    if (item.quantity > 1000) {
+      return;
+    }
+    if (item.productId === productId) {
+      item.quantity += 1;
+    }
+  });
+  updateCartQuantity();
+  saveToLocalStorage();
+}
+updateCartQuantity();
