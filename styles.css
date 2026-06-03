@@ -1331,3 +1331,14 @@ address {
   top: 50%;
   display: none;
 }
+.payment-methods {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.payment-methods img {
+  width: 50px;
+  height: 32px;
+  object-fit: contain;
+}
