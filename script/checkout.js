@@ -8,6 +8,13 @@ import {
 } from "../data/cart.js";
 import { products } from "../data/products.js";
 function checkoutGrid() {
+  const container = document.querySelector(".js-summary-card");
+
+  if (cart.length === 0) {
+    container.innerHTML = "products empty";
+    return;
+  }
+
   let checkoutHtml = "";
   cart.forEach((item) => {
     let matchingproduct;
@@ -16,8 +23,10 @@ function checkoutGrid() {
         matchingproduct = product;
       }
     });
-
-    const html = `
+    if (cart.length === 0) {
+      document.querySelector(".js-summary-card").innerHTML = "products empty";
+    } else {
+      const html = `
    
           <div class="summary-item js-summary-item${matchingproduct.productId}">
             <img
@@ -37,10 +46,11 @@ function checkoutGrid() {
             </div>
           </div>
     `;
+    }
     checkoutHtml += html;
     saveToLocalStorage();
   });
-  document.querySelector(".js-summary-card").innerHTML = checkoutHtml;
+  container.innerHTML = checkoutHtml;
 
   function deleteItems() {
     const deleteItem = document.querySelectorAll(".js-delete-item");
