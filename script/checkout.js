@@ -8,13 +8,6 @@ import {
 } from "../data/cart.js";
 import { products } from "../data/products.js";
 function checkoutGrid() {
-  const container = document.querySelector(".js-summary-card");
-
-  if (cart.length === 0) {
-    container.innerHTML = "products empty";
-    return;
-  }
-
   let checkoutHtml = "";
   cart.forEach((item) => {
     let matchingproduct;
@@ -46,11 +39,12 @@ function checkoutGrid() {
             </div>
           </div>
     `;
+
+      checkoutHtml += html;
     }
-    checkoutHtml += html;
     saveToLocalStorage();
   });
-  container.innerHTML = checkoutHtml;
+  document.querySelector(".js-summary-card").innerHTML = checkoutHtml;
 
   function deleteItems() {
     const deleteItem = document.querySelectorAll(".js-delete-item");
