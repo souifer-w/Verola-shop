@@ -1,9 +1,4 @@
-export let cart = JSON.parse(localStorage.getItem("cart")) || [
-  {
-    productId: "PRD-1001",
-    quantity: 2,
-  },
-];
+export let cart = JSON.parse(localStorage.getItem("cart")) || [];
 export function addtocart(productId) {
   let matchingItem;
 

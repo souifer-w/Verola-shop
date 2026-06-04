@@ -22,7 +22,7 @@ function checkoutGrid() {
           <div class="summary-item js-summary-item${matchingproduct.productId}">
             <img
               src="${matchingproduct.image}"
-              alt="Heritage silver watch"
+              alt=""
             /> 
             <div>
               <h2>${matchingproduct.name}</h2>

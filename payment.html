@@ -16,9 +16,16 @@
     <header class="site-header page-header">
       <nav class="navbar dark-nav" aria-label="Primary navigation">
         <a class="brand" href="index.html">Verola</a>
+        <input class="menu-toggle" type="checkbox" id="menu-toggle-payment" aria-label="Open navigation menu" />
+        <label class="menu-button" for="menu-toggle-payment" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
         <div class="nav-links">
           <a href="products.html">Collections</a>
           <a href="checkout.html">Checkout</a>
+          <a href="orders-page.html">Orders</a>
         </div>
         <a
           class="cart-link"
@@ -62,7 +69,7 @@
             />
           </div>
 
-          <form class="checkout-form" action="order-summary.html" method="get">
+          <form class="checkout-form" method="get">
             <label class="radio-card active">
               <input type="radio" name="payment" checked />
               <span>Credit / Debit Card</span>
@@ -142,8 +149,11 @@
       </section>
     </main>
     <div class="pay">
-      <p>payment sucssefully ✓</p>
-      <a href="products.html">Back to collectionspay</a>
+      <h2>Payment Successful ✓</h2>
+      <p>
+        Thank you for your purchase. Your order has been placed successfully.
+      </p>
+      <a href="products.html" class="btn"> Continue Shopping </a>
     </div>
     <script src="script/payment.js" type="module"></script>
   </body>

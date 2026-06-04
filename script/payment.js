@@ -1,5 +1,6 @@
 import { cart, updateCartQuantity } from "../data/cart.js";
 import { products } from "../data/products.js";
+
 let itemsHtml = "";
 let totalHtml = "";
 let subtotal = 0;
@@ -44,3 +45,23 @@ totalHtml = `
   `;
 document.querySelector(".js-summary-card").innerHTML = totalHtml;
 updateCartQuantity();
+const form = document.querySelector(".checkout-form");
+const pay = document.querySelector(".pay");
+const payPage = document.querySelector(".page-main");
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const orders = JSON.parse(localStorage.getItem("orders")) || [];
+  orders.push({
+    id: `ORD-${Date.now()}`,
+    date: new Date().toLocaleDateString(),
+    items: [...cart],
+  });
+
+  localStorage.setItem("orders", JSON.stringify(orders));
+
+  pay.style.display = "block";
+  payPage.classList.add("page-pay");
+  cart.length = 0;
+  localStorage.removeItem("cart");
+  updateCartQuantity();
+});

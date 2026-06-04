@@ -9,7 +9,7 @@ function collectionsGrid() {
   let collectionsHtml = "";
   products.forEach((product) => {
     const html = `
-             <article class="shop-card" id="watches">
+             <article class="shop-card" id="${product.topic}">
           <a class="shop-media">
             <img src="${product.image}">
           </a>
